@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <!-- 広告領域 -->
+    <!-- 
+    <RelativeLayout
+		android:id="@+id/adcontainer"  
+		android:layout_width="fill_parent"   
+		android:layout_height="wrap_content">
+		<mediba.ad.sdk.android.openx.MasAdView
+		    android:id="@+id/adview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"/>         
+	</RelativeLayout>
+     -->
+     
+    <!-- contents -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:gravity="top|center"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+        
+        <ImageView
+	        android:id="@+id/ultra_bros_no"
+	        android:layout_width="50dp"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="8dp"
+	        android:layout_gravity="left"
+	        android:src="@drawable/no001"/>
+	    <ImageView
+	        android:id="@+id/ultra_bros_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/ultra_name_001"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:id="@+id/ultra_bros_body"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/ultra_bros_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:src="@drawable/ultra_text_001" />
+        <ImageView 
+            android:id="@+id/rare_level"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/rare_level1"/>
+        <ImageButton
+	         android:layout_width="130dp"
+	         android:layout_height="40dp"
+	         android:layout_marginBottom="10dp"
+	         android:id="@+id/btn_transform"
+	         android:scaleType="fitCenter"
+	         android:background="@null"
+	         android:src="@drawable/button_back" 
+	         android:onClick="onClickBackButton" />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aharada.ultra100bros"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <!-- オープニング画面 -->
+        <activity
+            android:name=".OpeningActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 変身画面 -->
+        <activity
+            android:name=".Ultra100brosActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+        <!-- ウルトラ兄弟画面  -->
+        <activity
+            android:name=".UltraDisplayActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+　　　　 </activity>
+        
+        <!-- ウルトラ兄弟一覧画面  -->
+        <activity
+            android:name=".UltraBrosListActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+　　　　 </activity>
+
+        <!-- ウルトラ兄弟横並び一覧画面  -->
+        <activity
+            android:name=".UltraBrosListHorizontalActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+　　　　</activity>
+      
+        <!-- ウルトラ兄弟コンプリート画面  -->
+        <activity
+            android:name=".UltraBrosCompleteActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+　　　　</activity>
+        
+        <!-- 広告mediba -->
+        <activity android:name="mediba.ad.sdk.android.openx.MasAdClickWebview" />
+        
+    </application>
+
+</manifest>

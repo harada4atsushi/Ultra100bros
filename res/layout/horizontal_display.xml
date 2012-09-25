@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <!-- 兄弟Noを持たせる -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/p_bros_no" 
+        android:visibility="invisible"/>
+    
+    <!-- contents -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:gravity="top|center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+        <ImageView
+            android:id="@+id/ultra_bros_no"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="left"
+            android:src="@drawable/no001"/>
+        <ImageView
+            android:id="@+id/ultra_bros_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ultra_name_001"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+	        <ImageView
+	            android:id="@+id/arrow_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/arrow_left"/>
+	        <ImageView
+	            android:id="@+id/ultra_bros_body"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/no001_ultrabros"/>
+	         <ImageView
+                android:id="@+id/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right"/>
+	    </RelativeLayout>
+        <ImageView
+            android:id="@+id/ultra_bros_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+        <ImageView 
+            android:id="@+id/rare_level"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/rare_level1"/>
+    </LinearLayout>
+</LinearLayout>
